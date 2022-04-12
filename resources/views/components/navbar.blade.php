@@ -11,6 +11,9 @@
               width="50"
               height="50"
               class="rounded-circle">
+          <div class="d-flex align-items-center justify-content-center m-sm-2">
+              <h5 class="text-white">{{ auth()->user()->username }}</h5>
+          </div>
           <form method="POST" action="/logout">
             @csrf
           <button type="submit" class="nav-link btn btn-link">Logout</button>
